@@ -13,7 +13,9 @@ $(document).ready(function (){
                   .map(function(n) {
                     return parseInt(n);
                   });
-    timePlayed = timePlayed[0]*60+timePlayed[1];
-    console.log(timePlayed)
+    timePlayed = timePlayed[0] * 60 + timePlayed[1];
+    if (timePlayed > 0) {
+      return timePlayed;
+      }
   });
 });
